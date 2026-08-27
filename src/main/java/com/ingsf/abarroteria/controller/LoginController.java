@@ -26,7 +26,7 @@ public class LoginController implements Initializable {
     private TextField txtFieldEmail;
 
     @FXML
-    private PasswordField txtFieldPassword;
+    private TextField txtFieldPassword;
  
     public LoginController(AuthService authService, SceneManager sceneManager) {
 
