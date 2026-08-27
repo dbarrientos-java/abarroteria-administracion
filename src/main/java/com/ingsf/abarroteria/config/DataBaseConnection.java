@@ -1,0 +1,25 @@
+package main.java.com.ingsf.abarroteria.config;
+ 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+ 
+public class DataBaseConnection {
+    //atributos
+    private static Connection connection;
+    /* constructor
+    el constructor tiene que ser privado porque No permite que
+    la clase sea instanciada
+    */
+    private DataBaseConnection(){};
+    // metodo
+    public static Connection getDataBaseConnection() throws SQLException {
+        if(connection == null || connection.isClosed()){
+            connection = DriverManager.getConnection(
+                 Crendentials.URL_DATA_BASE, 
+                 Crendentials.USER_DB,
+                 Crendentials.PASS_DB);
+        }
+        return connection;
+    }
+}
