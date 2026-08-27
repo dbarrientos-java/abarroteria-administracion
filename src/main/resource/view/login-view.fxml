@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="419.0" prefWidth="668.0" styleClass="back" stylesheets="@../css/login-view.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.ingsf.abarroteria.controller.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="419.0" prefWidth="668.0" styleClass="back" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.ingsf.abarroteria.controller.LoginController">
 <children>
 <GridPane alignment="CENTER" layoutX="-21.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-21.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="0.0">
 <columnConstraints>
@@ -39,14 +39,14 @@
 <String fx:value="butt" />
 </styleClass>
 </Button>
-<TextField layoutX="96.0" layoutY="239.0" prefHeight="25.0" prefWidth="226.0" />
+<TextField fx:id="txtFieldPassword" layoutX="96.0" layoutY="239.0" prefHeight="25.0" prefWidth="226.0" />
 <Button layoutX="236.0" layoutY="295.0" mnemonicParsing="false" stylesheets="@../css/button-style.css" text="Registrarse">
 <styleClass>
 <String fx:value="back" />
 <String fx:value="but" />
 </styleClass>
 </Button>
-<TextField layoutX="96.0" layoutY="185.0" prefHeight="25.0" prefWidth="226.0" />
+<TextField fx:id="txtFieldEmail" layoutX="96.0" layoutY="185.0" prefHeight="25.0" prefWidth="226.0" />
 <Label layoutX="102.0" layoutY="168.0" styleClass="text" stylesheets="@../css/login-view.css" text="Usuario o correo " textFill="#ffb700" />
 </children>
 <opaqueInsets>
